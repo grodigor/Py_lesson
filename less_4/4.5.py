@@ -1,0 +1,10 @@
+x = '0123456789'
+print('a',x[2])
+print('b',x[-2])
+print('c',x[:5])
+print('d',x[:-2])
+print('e',(x[::2]))
+print('f',x[1::2])
+print('g',x[::-1])
+print('h',x[-1::-2])
+print('i',len(x))
