@@ -1,13 +1,9 @@
 # 4. Дан список случайных целых чисел. Замените все нечетные числа списка нулями. И выведете их количество.
 import random
-list_ = [random.randint(1, 100) for i in range(random.randint(1, 100))]
-print(list_)
-new_list = []
+def replace_(list_, value = 0):
+    return [value if not i % 2 else num for i, num in enumerate(list_)]
 
-for num in list_:
-    if num % 2 == 0:
-        num = 0
-        new_list.append(num)
 
-print(new_list)
-print(f'Четных чисел: {new_list.count(0)}')
+new_list = [random.randint(1, 999) for num in range(random.randint(1, 30))]
+new_list = replace_(new_list)
+print(new_list.count(0))
