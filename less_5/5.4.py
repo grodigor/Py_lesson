@@ -1,3 +1,4 @@
+# 4. Дан список случайных целых чисел. Замените все нечетные числа списка нулями. И выведете их количество.
 import random
 list_ = [random.randint(1, 100) for i in range(random.randint(1, 100))]
 print(list_)
