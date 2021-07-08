@@ -12,6 +12,6 @@ def countdown(func):
 
 @countdown
 def time_now():
-    print(time.strftime('%H:%M'))
+    print(time.strftime('%H:%M:%S'))
 
 time_now()
